@@ -10,5 +10,6 @@
       <a class="p-2 text-dark" href="http://127.0.0.1:8080/laravel-blog/public/about">About</a>
       <a class="p-2 text-dark" href="http://127.0.0.1:8080/laravel-blog/public/services">Services</a>
       <a class="p-2 text-dark" href="http://127.0.0.1:8080/laravel-blog/public/posts">Posts</a>
+      <a class="p-2 text-dark" href="http://127.0.0.1:8080/laravel-blog/public/posts/create">Create Post</a>
     </nav>
   </div>

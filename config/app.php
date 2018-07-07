@@ -163,6 +163,9 @@ return [
         /*Collective forms*/
         Collective\Html\HtmlServiceProvider::class,
 
+        /*CK editor*/
+        Laravel\Tinker\TinkerServiceProvider::class,
+
 
     ],
 
