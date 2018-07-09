@@ -26,3 +26,7 @@ Route::get('/hello', function () {
 // Route::get('/users/{id}/{name}', function($id, $name){
 //   return 'This is user '.$name.' with and id of '.$id;
 // });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
