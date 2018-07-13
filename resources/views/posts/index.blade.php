@@ -8,7 +8,7 @@
         <a href="http://127.0.0.1:8080/laravel-blog/public/posts/{{$post->id}}">
           <h3>{{$post->title}}</h3>
         </a>
-        <small>Written on {{$post->created_at}} by {{$post->name}}</small>
+        <small>Written on {{$post->created_at}} by {{$post->user->name}}</small>
 
       </div>
     @endforeach
