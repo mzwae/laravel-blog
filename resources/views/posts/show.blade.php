@@ -6,6 +6,8 @@
   <br>
   <h1>{{$post->title}}</h1>
   <small>Written on {{$post->created_at}} by {{$post->user->name}}</small>
+  <img src="<?=url('/')?>/storage/cover_images/{{$post->cover_image}}" style="width:100%">
+
   <hr>
   <div>
     {!!$post->body!!}
