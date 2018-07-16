@@ -7,7 +7,7 @@
       <div class="card card-body">
         <div class="row">
           <div class="col-md-4 col-sm-4">
-            <img src="<?=url('/')?>/storage/cover_images/{{$post->cover_image}}" style="width:50%">
+            <img src="<?=url('/')?>/storage/cover_images/{{$post->cover_image}}" style="width:100%">
           </div>
           <div class="col-md-8 col-sm-8">
             <a href="<?=url('/')?>/posts/{{$post->id}}">
