@@ -133,8 +133,15 @@ class PostsController extends Controller
         $path = $request->file('cover_image')->storeAs('public/cover_images', $fileNameToStore);
       }
 
+
+
       // Create post
       $post = Post::find($id);
+      if ($post->cover_image != 'noimage.jpg') {
+        // Delete image
+        $filepath = 'public/cover_images/'.$post->cover_image;
+        Storage::delete($filepath);
+      }
       $post->title = $request->input('title');
       $post->body = $request->input('body');
       $post->user_id = auth()->user()->id;
