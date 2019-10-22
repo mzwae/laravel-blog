@@ -137,6 +137,8 @@ class PostsController extends Controller
 
       // Create post
       $post = Post::find($id);
+
+      // Delete previous cover image
       if ($post->cover_image != 'noimage.jpg') {
         // Delete image
         $filepath = 'public/cover_images/'.$post->cover_image;
@@ -145,6 +147,8 @@ class PostsController extends Controller
       $post->title = $request->input('title');
       $post->body = $request->input('body');
       $post->user_id = auth()->user()->id;
+
+      // Add new cover image
       if ($request->hasFile('cover_image')) {
         $post->cover_image = $fileNameToStore;
       }
